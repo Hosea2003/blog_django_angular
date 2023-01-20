@@ -1,0 +1,14 @@
+<div class="container">
+    <form class="loginForm"  (submit)="getData()" [formGroup]="loginForm">
+        <h3 class="title">Sign in here</h3>
+        <div class="form-input">
+            <input type="text" name="username" placeholder="Username" formControlName="username">
+        </div>
+        <div class="form-input">
+            <input [type]="type" name="password" placeholder="Password" formControlName="password">
+            <button class="iconBtn" (click)="changeIcon()"><mat-icon>{{icon}}</mat-icon></button>
+        </div>
+
+        <button class="loginBtn">Log In</button>
+    </form>
+</div>

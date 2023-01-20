@@ -1,0 +1,78 @@
+.container{
+    display: flex;
+    justify-content: center;
+    max-height: calc(100% - 100px);
+    overflow-y: auto;
+    padding:2rem;
+}
+
+.wrapper{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    padding: 0;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.blog-create{
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+}
+
+.head{
+    font-size: 18px;
+    text-align: center;
+}
+
+.blog-create form{
+    padding:2rem;
+    border: 2px solid #EDEEEE;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    border: 1px solid #d8d8d8;
+    margin-bottom: 1rem;
+}
+
+.input-container input,
+.input-container textarea{
+    border: none;
+    margin:15px 10px;
+    outline: none;
+}
+
+.create-btn{
+    background-color: #151515;
+    color: #fff;
+    padding:15px;
+    border-radius: 7px;
+    margin-top: 2rem;
+}
+
+.preview{
+    max-width: 500px;
+}
+
+.upload-image input[type="file"]{
+    display: none;
+}
+
+.upload-image label{
+    color: white;
+    height: 50px;
+    width: 200px;
+    background-color: #f5af09;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}

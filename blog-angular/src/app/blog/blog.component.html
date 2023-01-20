@@ -1,0 +1,37 @@
+<div class="content">
+    <div class="blog">
+        <div class="username">
+            <strong><a href="#">@{{blog.user.username}}</a></strong>
+        </div>
+        <div class="main-content">
+            <div class="text">
+                <h3 class="title">{{blog.title}}</h3>
+                <p [classList]="content_class">{{blog.content}}</p>
+                <button (click)="viewMore()">{{view_more}}</button>
+            </div>
+            <div class="image-container">
+                <img src={{blog.image}} alt="">
+            </div>
+        </div>
+        <div class="action-container" *ngIf="actionVisible">
+            <button (click)="like()" [style]="likeColor"><mat-icon>thumb_up</mat-icon>{{blog.likes}}</button>
+            <button (click)="commentClick()"><mat-icon>comment</mat-icon>{{blog.comments}}</button>
+            <button><mat-icon>block</mat-icon>Unpublish</button>
+        </div>
+    </div>
+    
+    <div class="comment-content">
+        <div class="comments-section" [style]="display">
+            <div class="comment" *ngFor="let comment of commentList">
+                <strong><a href="#" class="comment-username">@{{comment.username}}</a></strong>
+                <p class="comment-text">{{comment.comment}}</p>
+            </div>
+        </div>
+        <form action="" class="post-comment" [formGroup]="commentForm" (ngSubmit)="SendComment()">
+            <div class="comment-input">
+                <input type="text" name="comment" formControlName="comment" placeholder="Send your comment">
+                <button class="comment-send"><mat-icon>send</mat-icon></button>
+            </div>
+        </form>
+    </div>
+</div>

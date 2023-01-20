@@ -1,0 +1,152 @@
+*{
+    text-decoration: none;
+}
+
+.content{
+    box-shadow: 2px 2px 3px 3px #EDEEEE;
+    border-radius: 10px 10px 0 0;
+}
+
+.blog{
+    width:100%;
+    border: 1px solid #EDEEEE;
+    border-radius: 10px;
+    min-width: 400px;
+}
+
+.username{
+    background-color: #EDEEEE;
+    padding:1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.username strong a{
+    color:black;
+}
+
+.username strong a:hover{
+    text-decoration: underline;
+}
+
+.text{
+    padding:2rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-weight: 500;
+}
+
+.content-text{
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.more{
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: none;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text button{
+    width: fit-content;
+    padding: 0;
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color:#036ffc;
+}
+
+.text button:hover{
+    text-decoration:underline;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    background-color: #b7bec7;
+}
+
+.image-container img{
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.action-container{
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    padding:1px;
+    background-color: #EDEEEE;
+    border-radius: 0 0 10px 10px;
+}
+
+.action-container button{
+    padding-block: .5rem;
+    width: 100%;
+    border:none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:.5rem;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.comment-content{
+    margin-top: -5px;
+    margin-bottom: 2rem;
+    padding:.5rem 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.post-comment{
+    padding:10px;
+}
+
+.comment-input{
+    display: flex;
+    background-color: white;
+    padding:5px 10px 5px 15px;
+    border-radius: 15px;
+    background-color: #eef0f1;
+    margin-top: 1.5rem;
+}
+
+.comment-input input{
+    width: 100%;
+    border:none;
+    outline: none;
+    background-color: transparent;
+}
+
+.comment-input button{
+    background-color: transparent;
+    border: none;
+}
+
+.comments-section{
+    margin-top: 1rem;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.comment{
+    background: #eff0f1;
+    border-radius: 10px;
+    padding:15px 10px 5px 10px;
+}
+
+.comment strong a{
+    color: black;
+}
